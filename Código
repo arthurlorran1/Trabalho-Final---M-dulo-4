@@ -1,0 +1,57 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+dados = pd.DataFrame({
+'Dia':'Segunda Terça Quarta Quinta Sexta Sábado Domingo'.split(),
+'Horas Trabalhadas':[6,7,8,6,7,5,4],
+'Bugs Corrigidos' : [3,2,1,4,3,2,1],
+'Tarefas concluídas' : [5,4,6,4,5,3,2],              
+})
+
+#Retorna o dataframe
+dados
+
+# Total de Horas Trabalhadas
+total_horas = dados['Horas Trabalhadas'].sum()
+
+# Média Diária de Horas Trabalhadas
+media_diaria_horas = dados['Horas Trabalhadas'].mean()
+
+# Total de Bugs Corrigidos
+total_bugs = dados['Bugs Corrigidos'].sum()
+
+# Média Diária de Bugs Corrigidos
+media_diaria_bugs = dados['Bugs Corrigidos'].mean()
+
+# Total de Tarefas Concluídas
+total_tarefas = dados['Tarefas concluídas'].sum()
+
+# Média Diária de Tarefas Concluídas
+media_diaria_tarefas = dados['Tarefas concluídas'].mean()
+
+# Produtividade Diária (Tarefas Concluídas por Hora)
+dados['Produtividade Diária'] = dados['Tarefas concluídas'] / dados['Horas Trabalhadas']
+
+# Imprimir Relatório
+relatorio = pd.DataFrame({
+    'Total de Horas Trabalhadas': [total_horas],
+    'Média Diária de Horas Trabalhadas': [media_diaria_horas],
+    'Total de Bugs Corrigidos': [total_bugs],
+    'Média Diária de Bugs Corrigidos': [media_diaria_bugs],
+    'Total de Tarefas Concluídas': [total_tarefas],
+    'Média Diária de Tarefas Concluídas': [media_diaria_tarefas],
+})
+
+relatorio
+
+
+# Continuação do código
+new_relatorio = pd.DataFrame({
+    'Total_de_servicos': [total_bugs + total_tarefas],
+    'Média Diária de Serviços Concluídos': [Total_de_servicos/ len(dados.Dia)],  # Usamos len(dados) para obter o número de dias
+    'Média de Serviços Concluídos por hora': [Total_de_servicos / total_horas],
+})
+
+new_relatorio
+

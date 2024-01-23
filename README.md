@@ -10,20 +10,6 @@ Para executar este projeto:
 3. Execute o código para visualizar os resultados e insights.
 
 
-Instruções de Uso:
-Abra o Jupyter Notebook ou Colab.
-Abra o arquivo relatorio_progresso_diario.ipynb.
-Execute as células do notebook para gerar o relatório.
-Estrutura do Código:
-O código está dividido em seções que correspondem a cada requisito do relatório. As principais seções incluem:
-
-Importação de Bibliotecas: Importa as bibliotecas necessárias, como Pandas.
-Criação do DataFrame: Define um DataFrame com os dados diários.
-Análise Exploratória: Realiza análises e cálculos com base nos dados.
-Visualização de Dados: Utiliza gráficos para apresentar os resultados.
-Conclusões e Insights: Sumariza os principais resultados e insights gerados pela análise.
-Resultados e Insights:
-O relatório gerado apresenta informações sobre o total de horas trabalhadas, média diária de horas trabalhadas, total de bugs corrigidos, média diária de bugs corrigidos, total de tarefas concluídas, média diária de tarefas concluídas e produtividade diária.
 
 ### **Etapas do Projeto**
 
@@ -77,7 +63,6 @@ new_relatorio
 
 
 
-
 **Novo Relatório de Progresso Diário - Análise de Produtividade**
 
 O novo relatório foi criado com o intuito de consolidar informações significativas sobre o progresso diário da equipe, fornecendo uma visão clara e objetiva de métricas essenciais. Vamos explorar detalhadamente cada aspecto do relatório:
@@ -91,5 +76,6 @@ O novo relatório foi criado com o intuito de consolidar informações significa
 3. **Média de Serviços Concluídos por Hora:**
    - Indica a produtividade diária da equipe, expressa como a média de tarefas concluídas por hora trabalhada. Essa métrica fornece insights sobre a eficiência da equipe durante o tempo dedicado ao trabalho.
 
-Conclusão e Insights do Relatório Inicial
+
+### Conclusão e Insights do Relatório Inicial
 O relatório inicial oferece uma visão abrangente das atividades diárias da equipe. Destacam-se a média diária de horas trabalhadas, a média diária de bugs corrigidos e a média diária de tarefas concluídas. A produtividade diária, representada pelo número de tarefas concluídas por hora, fornece uma métrica valiosa para avaliar a eficiência da equipe ao longo da semana.
